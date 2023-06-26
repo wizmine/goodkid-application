@@ -1,0 +1,70 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  background: #000000;
+
+  &-burger-btn {
+    cursor: pointer;
+    width: 50px;
+    margin: 20px;
+    border: 0;
+    background-color: black;
+    z-index: 2;
+
+    @media screen and (min-width: 1025px) {
+      z-index: -1;
+      opacity: 0;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &-logo {
+    z-index: 2;
+
+    & img {
+      height: 80px;
+    }
+
+    @media screen and (max-width: 1024px) {
+      & img {
+        height: 60px;
+      }
+    }
+  }
+
+  &-cart-btn {
+    cursor: pointer;
+    width: 50px;
+    margin: 20px;
+    border: 0;
+    background-color: black;
+    z-index: 2;
+
+    img {
+      width: 100%;
+    }
+
+    &-count {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 22px;
+      width: 22px;
+      font-size: 15px;
+      border-radius: 50%;
+      transform: translateY(-100%);
+      background-color: #fc576b;
+      color: #ffffff;
+    }
+
+    .close {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+.announcement {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 30px;
+
+  &-text {
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+  }
+}
+
+.text1 .marquee-text {
+  margin-right: 2rem;
+}
+
+.text2 .marquee-text:not(:last-child) {
+  margin-right: 2rem;
+}
+
+.text2 .marquee-text:last-child{
+  margin-right: 1rem;
+}
+
+.fast-marquee {
+  z-index: -1;
+}
+
+.marquee {
+  margin-top: 30px;
+  font-weight: 700;
+
+  &-star {
+    width: 30px;
+    height: 30px;
+    margin: 0px 20px;
+  }
+}

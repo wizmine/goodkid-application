@@ -1,0 +1,33 @@
+.banner {
+  background-color: #04c000;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &-text {
+    font-family: "Montserrat", sans-serif;
+    font-style: italic;
+    font-size: 30px;
+    color: white;
+    font-weight: 100;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .banner {
+    height: 35px;
+
+    &-text {
+      font-size: 25px;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .banner {
+    &-text {
+      font-size: 20px;
+    }
+  }
+}
